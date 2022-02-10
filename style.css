@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+* {
+    font-family: 'Oxygen', sans-serif;
+}
+
+#heading, #information, #options, #chambers, #returns, #autoTimes, #automationResult, #resetAuto {
+    margin-left: 30px;
+}
+
+#heading {
+    margin-top: 20px;
+}
+
+.chamber {
+    height: 50px;
+    width: 50px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.button {
+    padding-left: 10px;
+    border-radius: 20px;
+    border-width: 1px;
+    padding: 4px;
+}
+
+#spinButton {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #4285f4;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    color: white;
+}
+
+#autoTimes {
+    border-radius: 9px;
+    border-width: 1px;
+    padding: 4px;
+    padding-left: 10px;
+}
+
+#clearButton, #startAuto, #resetAuto {
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#clearButton {
+    margin-bottom: 30px;
+}
+
+.disable-highlighting {
+    user-select: none;
+}
+
+#wincountDisplay {
+    margin-top: 10px;
+}
+
+.marquee {
+    margin-top: 40px;
+    width: 100%;
+    line-height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+/* scrolling text animation keyframes */
+@keyframes marquee { 
+    0% { transform: translate(-100%,0); }
+    100% { transform: translate(0, 0);}
+}
+
+#automater {
+    margin-top: 20px;
+}
+
+#autoTimes {
+    width: 13%;
+    margin-right: 10px;
+}
+
+#automationResult {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
