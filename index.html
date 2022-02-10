@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russian Roulette Project - Ethan Pierce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="heading">
+        <heading>
+            <h1>добро пожаловать в русскую рулетку</h1>
+            <h4 style="color: slategray; padding-bottom: 20px;">Welcome to Russian Roulette</h2>
+        </heading>
+    </div>
+    <div id="information">
+        <p>
+            The circles below are chambers, and one of them has a bullet. Click one to play and good luck >:)
+        </p>
+    </div>
+    <div id="chambers">
+        <span class="chamber" id="chamber1" onclick="shoot(1)"></span>
+        <span class="chamber" id="chamber2" onclick="shoot(2)"></span>
+        <span class="chamber" id="chamber3" onclick="shoot(3)"></span>
+        <span class="chamber" id="chamber4" onclick="shoot(4)"></span>
+        <span class="chamber" id="chamber5" onclick="shoot(5)"></span>
+        <span class="chamber" id="chamber6" onclick="shoot(6)"></span>
+    </div>
+    <div id="returns">
+        <p id="feedback">
+
+        </p>
+    </div>
+
+    <script src="roulette.js"></script>
+</body>
+</html>

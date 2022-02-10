@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+* {font-family: 'Oxygen', sans-serif;}
+
+
+.chamber {
+    height: 50px;
+    width: 50px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+}
