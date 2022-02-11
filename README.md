@@ -2,6 +2,11 @@
 
 # defs - 
     Functionality - basically what the program is **doing**
+    Sequencing - the specific order that the computer processes the code in
+    Selection - in a for() loop (or other iteration), the "selection" is the if() statement inside of it that pulls out specific pieces of data and returns them
+    Iteration - basically just a for() loop. the actual definition is basically going through each piece of data in a data collection
+    Condition - when you see this think "if() statement". This is the conditions something has to meet in order for a piece of code to run differently, or run at all
+    Procedure - this is literally just a function. Its defined as "a named group of programming instructions that may have parameters and return values"
 
 # video - 
     Demonstrate: {
@@ -55,5 +60,14 @@
     }
 
     Row 6: {
+        describe two calls with parameters to the function that you described in row 4 that have different parameters
         
+        describe the conditions being tested by each call to the procedure (have an if() statement inside of your function that determines an outcome and describe it)
+        
+        identify and describe the result of the two calls
     }
+    
+    Extra notes: {
+        When the rubric says "has to be student-developed" that basically means just don't use a library or a very specific function from another piece of code
+    }
+    
