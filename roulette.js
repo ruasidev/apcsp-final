@@ -24,7 +24,7 @@ const spinFirst = [
     "omg please spin the chamber",
     "ok actually stop",
     "are you trying to make someone mad? does this make your day better?",
-    "this is your sixth sinfulWrongdoing at this point. what are you trying to accompolish",
+    "this is your sixth sinfulWrongdoing at this point. what are you trying to accomplish",
     "is this something you do for fun or something? does this make you happy? SPIN THE CHAMBER",
     "nah do it again and see what happens",
     "im about to give up seriously im so done",
@@ -120,7 +120,6 @@ const automationStart = (times) => {
         return autoResult.textContent = "Please use a whole number";
     }
     for(var i=0; i < times; i++){
-        spun = true;
         var computerGuess = getRandom();
         bulletPosition = getRandom();
         if(computerGuess===bulletPosition){
@@ -131,7 +130,7 @@ const automationStart = (times) => {
             autoGames++;
         }
     }
-    var endTime = performance.now();            // end performace timer
+    var endTime = performance.now();            // end performance timer
     return updateAutomationResults(computerWins, computerLosses, autoGames, (computerWins/autoGames)*100, endTime-startTime);
 }
 
@@ -140,7 +139,7 @@ const automationStart = (times) => {
 // {compuerLosses} - how many times the computer lost the game
 // {autoGames} - the number of rounds the computer played
 // {winLossPercentage} - the percentage of rounds the computer won out of all the rounds it played
-// {processTime} - how long the procedure took to perform
+// {processTime} - how long the procedure took to perform (ms)
 const updateAutomationResults = (computerWins, computerLosses, autoGames, winLossPercentage, processTime) => {
     resetAuto.style.display = "block";
     autoResult.innerHTML = `Automation Results:</br>Computer Won ${computerWins} games</br>
@@ -180,6 +179,7 @@ const changeSpinningText = () => {
         {revolutions = 0; changeSpinningText()}    // resets the string loop when it reaches the end of the infoblock
     }, scopeTime)
 }
+
 changeSpinningText();
 
 // {selected} - the chamber the user selected
@@ -209,7 +209,7 @@ const shoot = (selected) => {       // gets the chamber that the user clicked fr
         sinfulWrongdoings++;
         reset();
         feedback.textContent = spinFirst[sinfulWrongdoings-1];          // this is what displays the comments based on how many sinfulWrongdoings the user has
-        if(sinfulWrongdoings >= 13){                                    // when the user has 13 sinfulWrongdoings, change everything to red and make all the chambers bullets
+        if(sinfulWrongdoings >= spinFirst.length+1){                                    // when the user has 13 sinfulWrongdoings, change everything to red and make all the chambers bullets
             document.getElementById('background').style.backgroundColor = "maroon";
             document.getElementById('spinButton').style.backgroundColor = "red";
             document.getElementById('clearButton').style.backgroundColor = "red";
