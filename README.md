@@ -1,6 +1,8 @@
-# apcsp-final
+# This is the source code for my AP Computer Science Principals Final Project
 
-# defs - 
+# Rubric: 
+
+# Definitions - 
     Functionality - basically what the program is **doing**
     Sequencing - the specific order that the computer processes the code in
     Selection - in a for() loop (or other iteration), the "selection" is the if() statement inside of it that pulls out specific pieces of data and returns them
@@ -8,7 +10,7 @@
     Condition - when you see this think "if() statement". This is the conditions something has to meet in order for a piece of code to run differently, or run at all
     Procedure - this is literally just a function. Its defined as "a named group of programming instructions that may have parameters and return values"
 
-# video - 
+# Video - 
     Demonstrate: {
         the input you are giving the program
 
@@ -17,7 +19,7 @@
         the output
     }
 
-# written response - 
+# Written Response - 
     Row 1: {
         describe overall purpose of the program
 
