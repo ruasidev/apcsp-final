@@ -1,6 +1,4 @@
-# This is the source code for my AP Computer Science Principals Final Project
-
-# Rubric: 
+# This is the source code for my AP Computer Science Principals Final Project. Below is the rubric assigned but put into my own words
 
 # Definitions - 
     Functionality - basically what the program is **doing**
