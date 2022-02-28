@@ -209,7 +209,7 @@ const shoot = (selected) => {       // gets the chamber that the user clicked fr
         sinfulWrongdoings++;
         reset();
         feedback.textContent = spinFirst[sinfulWrongdoings-1];          // this is what displays the comments based on how many sinfulWrongdoings the user has
-        if(sinfulWrongdoings >= spinFirst.length+1){                                    // when the user has 13 sinfulWrongdoings, change everything to red and make all the chambers bullets
+        if(sinfulWrongdoings == spinFirst.length+1){                                    // when the user has 13 sinfulWrongdoings, change everything to red and make all the chambers bullets
             document.getElementById('background').style.backgroundColor = "maroon";
             document.getElementById('spinButton').style.backgroundColor = "red";
             document.getElementById('clearButton').style.backgroundColor = "red";
