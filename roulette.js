@@ -218,6 +218,7 @@ const shoot = (selected) => {       // gets the chamber that the user clicked fr
             feedback.style.color = "red";
             feedback.textContent = "YOU DIED.";
             games++;
+            displayRecord();
             for(var i = 0; i < chamberList.length; i++){
                 chamberList[i].style.backgroundColor = "red";
             }
