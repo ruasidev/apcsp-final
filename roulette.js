@@ -7,6 +7,12 @@ const startAutoButton = document.getElementById('startAuto');
 const autoResult = document.getElementById('automationResult');
 const resetAuto = document.getElementById('resetAuto');
 
+autoTimes.addEventListener('keyup', e => {
+    if(e.key = "Enter"){
+        automationStart()
+    }
+})
+
 // chambers
 const chamberList = [
     document.getElementById('chamber1'),
