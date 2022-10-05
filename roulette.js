@@ -7,7 +7,7 @@ const startAutoButton = document.getElementById('startAuto');
 const autoResult = document.getElementById('automationResult');
 const resetAuto = document.getElementById('resetAuto');
 
-autoTimes.addEventListener('keyup', e => {
+autoTimes.addEventListener('keydown', e => {
     if(e.key = "Enter"){
         automationStart()
     }
